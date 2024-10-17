@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+  <title>Newsletter sign-up form with success message</title>
+</head>
+
+<body class="w-full h-screen overflow-hidden md:grid md:place-content-center md:place-items-center md:bg-charcoal-Grey">
+
+  <div class="h-full md:grid md:grid-cols-2 md:py-5 md:px-5 md:rounded-2xl md:bg-white">
+
+    <header class="max-w-[700px]  mx-auto md:order-2">
+
+      <picture>
+
+        <source media="(min-width:768px)" srcset="images/illustration-sign-up-desktop.svg"
+          class="w-full h-full mx-auto bg-cover">
+
+        <img src="images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" class="w-full h-full ilustration-img">
+
+      </picture>
+
+    </header>
+
+    <main class="font-roboto w-[90%] mx-auto space-y-4 mb-8 max-w-[700px] md:order-1 md:my-12">
+      <h1 class="mt-6 text-3xl font-semibold md:text-4xl text-dark-slate-grey">Stay updated!</h1>
+
+      <section>
+
+        <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+
+        <article class="max-w-xs py-4 space-y-5 md:max-w-sm">
+
+          <div class="flex items-start gap-3">
+            <img src="images/icon-list.svg" alt="icon-list">
+
+            <p>Product discovery and building what matters</p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <img src="images/icon-list.svg" alt="icon-list">
+
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <img src="images/icon-list.svg" alt="icon-list">
+
+            <p>And much more!</p>
+          </div>
+        </article>
+
+      </section>
+
+      <section>
+
+
+        <form class="form">
+
+          <div class="flex items-center justify-between">
+            <p class="my-3 text-xs font-bold text-dark-slate-grey">Email address</p>
+          </div>
+
+          <input type="email" name="email" id="email" placeholder="email@company.com"
+            class="border-grey-hsl border-[1px] w-full py-2 rounded placeholder:pl-4 placeholder:text-sm">
+
+          <button type="submit"
+            class="w-full py-3 mt-5 text-center text-white rounded-md bg-dark-slate-grey hover:bg-gradient-to-r hover:from-pink-700 hover:to-tomato">Subscribe
+            to monthly newsletter</button>
+
+        </form>
+
+
+
+      </section>
+
+      <section
+        class="absolute inset-0 z-50 hidden mx-auto overflow-hidden bg-white place-content-end md:place-items-center md:place-content-center md:w-full md:mx-auto md:bg-charcoal-Grey md:max-w-none hidden-section">
+
+        <div
+          class="w-[90%] absolute inset-x-0 bottom-0 max-w-[500px] mx-auto md:w-1/2 h-[600px] md:h-full md:bg-white md:py-5 md:px-5 md:rounded-md  flex justify-between flex-col md:gap-6 md:static md:max-w-none">
+
+          <article class="grid space-y-5">
+            <img src="images/icon-list.svg" alt="icon-list" class="size-12" />
+
+            <p class="text-4xl font-semibold text-dark-slate-grey">
+              Thanks for subscribing
+            </p>
+
+            <p class="font-medium text-charcoal-Grey">
+              A confirmation email has been sent to
+              <span class="font-semibold text-dark-slate-grey user-email">ash@loremcompany.com.
+              </span>
+              Please open it and click the button inside to confirm your
+              subscription.
+            </p>
+          </article>
+
+          <button type="button"
+            class="self-end w-full py-3 mb-8 text-white rounded-md bg-dark-slate-grey hover:bg-gradient-to-r hover:from-pink-700 hover:to-tomato">Dismiss
+            message</button>
+
+        </div>
+
+
+      </section>
+
+
+    </main>
+
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
